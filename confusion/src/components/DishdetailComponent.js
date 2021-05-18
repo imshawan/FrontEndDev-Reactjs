@@ -78,10 +78,12 @@ class DishDetail extends Component {
     
 
         return (
+            <div className="container">
             <div className="row">
                 {dishInfo}
                 {dishComment}
-            </div>    
+            </div>   
+            </div> 
         );
     }
 

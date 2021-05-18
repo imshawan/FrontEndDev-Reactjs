@@ -31,7 +31,7 @@ class Menu extends Component {
                 // key: every item require key attribute to specift it.
                 // the key helps React to recognise each one of these elements, uniquely. 
                 <div key={dish.id} className="col-12 col-md-5 m-1">
-                    <Card onClick={() => this.onDishselect(dish)}> 
+                    <Card key={dish.id} onClick={() => this.props.onClick(dish.id)}> 
                         <CardImg width="100%" src={dish.image} alt={dish.name} />                    
                         <CardImgOverlay>
                             <CardTitle> {dish.name} </CardTitle>
